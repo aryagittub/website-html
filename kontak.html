@@ -8,28 +8,26 @@
 </head>
 <body>
     <main class="container">
-        <div class="kontak-wrapper">
+    <div class="kontak-wrapper">
 
     <!-- KARTU 1: FORM EMAIL -->
     <div class="kontak-card card-email">
         <h3>📧 Kirim via Email</h3>
-        <p>Isi formulir di bawah untuk mengirim pesan langsung ke email saya.</p>
+        <p>Isi formulir di bawah untuk mengirim pesan langsung via aplikasi Email/Gmail.</p>
         
-        <form action="https://formspree.io/f/xwlkerpp" method="POST" class="form-kontak">
+        <form id="formEmail" class="form-kontak">
             <div class="input-group">
                 <label for="email-nama">Nama:</label>
-                <input type="text" id="email-nama" name="name" placeholder="Nama kamu..." required>
-            </div>
-
-            <div class="input-group">
-                <label for="email-input">Email:</label>
-                <input type="email" id="email-input" name="email" placeholder="Email kamu..." required>
+                <input type="text" id="email-nama" placeholder="Nama kamu..." required>
             </div>
 
             <div class="input-group">
                 <label for="email-pesan">Pesan:</label>
-                <textarea id="email-pesan" name="message" rows="4" placeholder="Tulis pesan..." required></textarea>
+                <textarea id="email-pesan" rows="4" placeholder="Tulis pesan kamu..." required></textarea>
             </div>
+
+            <button type="button" class="btn-email" onclick="kirimKeEmail()">✉️ Kirim via Email</button>
+        </form>
 
             <button type="submit" class="btn-email">Kirim Email</button>
         </form>
@@ -76,6 +74,7 @@
         </footer>
     </main>
 
+    <script src="email.js"></script>
     <script src="wa.js"></script>
 </body>
 </html>
