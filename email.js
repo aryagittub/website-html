@@ -7,7 +7,7 @@ function kirimKeEmail() {
         return;
     }
 
-    let emailTujuan = "emailkamu@gmail.com"; // Ganti dengan alamat email kamu
+    let emailTujuan = "aryafadhilxxx12@gmail.com"; // Ganti dengan alamat email kamu
     let subjek = encodeURIComponent(`Pesan Website dari ${nama}`);
     let isiPesan = encodeURIComponent(`Halo, saya ${nama}.\n\nPesan:\n${pesan}`);
 
