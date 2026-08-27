@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Arya</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="kontak-wrapper">
+
+    <!-- KARTU 1: FORM EMAIL -->
+    <div class="kontak-card card-email">
+        <h3>📧 Kirim via Email</h3>
+        <p>Isi formulir di bawah untuk mengirim pesan langsung ke email saya.</p>
+        
+        <form action="https://formspree.io/f/xwlkerpp" method="POST" class="form-kontak">
+            <div class="input-group">
+                <label for="email-nama">Nama:</label>
+                <input type="text" id="email-nama" name="name" placeholder="Nama kamu..." required>
+            </div>
+
+            <div class="input-group">
+                <label for="email-input">Email:</label>
+                <input type="email" id="email-input" name="email" placeholder="Email kamu..." required>
+            </div>
+
+            <div class="input-group">
+                <label for="email-pesan">Pesan:</label>
+                <textarea id="email-pesan" name="message" rows="4" placeholder="Tulis pesan..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-email">Kirim Email</button>
+        </form>
+    </div>
+
+    <!-- KARTU 2: FORM WHATSAPP -->
+    <div class="kontak-card card-wa">
+        <h3>💬 Chat via WhatsApp</h3>
+        <p>Respon lebih cepat melalui pesan langsung ke WhatsApp.</p>
+        
+        <form id="formWA" class="form-kontak">
+            <div class="input-group">
+                <label for="wa-nama">Nama:</label>
+                <input type="text" id="wa-nama" placeholder="Nama kamu..." required>
+            </div>
+
+            <div class="input-group">
+                <label for="wa-pesan">Pesan:</label>
+                <textarea id="wa-pesan" rows="4" placeholder="Tulis pesan kamu..." required></textarea>
+            </div>
+
+            <button type="button" class="btn-wa" onclick="kirimKeWA()">Kirim ke WhatsApp</button>
+        </form>
+    </div>
+</div>
+        <hr>
+
+        <section class="info-kontak">
+            <h3>Atau Temukan Saya Di:</h3>
+            <ul>
+                <li><strong>Instagram:</strong> <a href="https://instagram.com/yoicchiii676767" target="_blank">Instagram Saya</a></li>
+                <li><strong>DeviantArt:</strong> <a href="https://deviantart.com" target="_blank"></a></li>
+                <li><strong>Lokasi:</strong> Samarinda, Kalimantan Timur</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p><strong>@ 2026 Arya - SMK TKJ</strong></p>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="profile.html">Profil Saya</a>
+                <a href="kontak.html">Kontak Saya</a>
+            </nav>
+        </footer>
+    </main>
+
+    <script src="wa.js"></script>
+</body>
+</html>
